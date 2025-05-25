@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: varsity;
+  src: url(../assets/fonts/varsity_regular.ttf);
+}
+.header {
+  text-align: end;
+}
+
+.titulo {
+  background-color: grey;
+}
+
+.alineacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.productos {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(128, 128, 128, 0.623);
+  justify-content: space-between;
+  padding: 20px;
+  margin: 20px;
+}
+
+h2 {
+  font-family: versity;
+  color: black;
+}
+
+p {
+  font-family: varsity;
+  color: black;
+  font-size: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 180px);
+  grid-template-areas: "img3 img3 img3 img3" "img2 img2 img4 img4" "img5 img5 img1 img1";
+  grid-gap: 15px;
+  padding: 20px;
+  background-color: rgba(128, 128, 128, 0.623);
+}
+
+.item {
+  border: 5px solid black;
+  background-size: auto;
+  background-position: center;
+  border-radius: 7px;
+  transition: all 0.7s;
+}
+.item:hover {
+  filter: grayscale(100%);
+  transform: scale(1.09);
+}
+
+.item:hover {
+  filter: grayscale(100%);
+  transform: scale 1, 9;
+}
+
+.item1 {
+  grid-area: img1;
+  background-image: url(../assets/multimedia/empresa.jpg);
+}
+
+.item2 {
+  grid-area: img2;
+  background-image: url(../assets/multimedia/empresa\ 2.jpg);
+}
+
+.item3 {
+  grid-area: img3;
+  background-image: url(../assets/multimedia/empresa\ 4.png);
+}
+
+.item4 {
+  grid-area: img4;
+  background-image: url(../assets/multimedia/empresa3.jpg);
+}
+
+.item5 {
+  grid-area: img5;
+  background-image: url(../assets/multimedia/empresa\ 5.jpg);
+}
+
+.footerAlineacion {
+  text-align: right;
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 991px) {
+  .alineacion {
+    padding: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .box:nth-child(1) {
+    grid-column-start: span 1;
+  }
+  .box:nth-child(4) {
+    grid-column-start: span 1;
+  }
+  }
