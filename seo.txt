@@ -1,0 +1,29 @@
+1. Etiquetas meta:
+   - <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   - <meta charset="UTF-8">
+   - <title>VANS</title>
+   - (Agregar en cada página) <meta name="description" content="Venta de zapatillas Vans originales en Argentina. Hombre, mujer, niño y accesorios.">
+
+2. Uso de etiquetas semánticas:
+   - Uso de <nav>, <footer>, <h1>, <h3> para mejorar la estructura y accesibilidad.
+
+3. Imágenes optimizadas:
+   - Uso de atributos alt descriptivos en todas las imágenes.
+
+4. URLs amigables:
+   - Estructura de URLs clara y simple (ej: /pages/productos.html).
+
+5. Responsive design:
+   - Uso de Bootstrap y media queries para adaptar el sitio a dispositivos móviles.
+
+6. Rendimiento:
+   - Uso de CDN para Bootstrap y Popper.js.
+   - Optimización de imágenes (reducir peso antes de subirlas).
+
+7. Accesibilidad:
+   - Contraste de colores adecuado en textos y fondos.
+   - Textos alternativos en imágenes.
+
+8. Buenas prácticas adicionales:
+   - Uso de favicon (opcional).
+   - Sitemap.xml y robots.txt (opcional para proyectos reales).

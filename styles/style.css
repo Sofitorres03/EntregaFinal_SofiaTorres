@@ -12,6 +12,11 @@
   text-align: end;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+
 .titulo {
   background-color: grey;
 }
@@ -41,6 +46,12 @@ p {
   font-family: varsity;
   color: black;
   font-size: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .grid {
@@ -96,8 +107,22 @@ p {
   background-image: url(../assets/multimedia/empresa\ 5.jpg);
 }
 
+.footer{
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 15px 0;
+}
+
 .footerAlineacion {
-  text-align: right;
+  text-align: center;
   background-color: black;
   color: white;
 }

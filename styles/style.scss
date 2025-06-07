@@ -11,6 +11,17 @@
 .header {
   text-align: end;
 }
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
 .titulo {
   background-color: grey;
@@ -41,6 +52,13 @@ p {
   font-family: varsity;
   color: black;
   font-size: 20px;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .grid {
@@ -95,11 +113,28 @@ p {
   background-image: url(../assets/multimedia/empresa\ 5.jpg);
 }
 
-.footerAlineacion {
-  text-align: right;
+.footer{
+  margin-top: auto;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
   background-color: black;
-  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 15px 0;
 }
+
+// .footerAlineacion {
+//   margin-top: 40px;
+//   text-align: center;
+//   color: white;
+//   margin: 0;
+//   padding: 0;
+// }
 
 @media (max-width: 991px) {
   .alineacion {
