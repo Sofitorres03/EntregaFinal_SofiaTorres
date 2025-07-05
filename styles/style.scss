@@ -1,3 +1,8 @@
+// Variables
+$fuente: 'varsity';
+$color1:black;
+$color2:grey;
+
 * {
   padding: 0;
   margin: 0;
@@ -24,7 +29,7 @@ body {
 }
 
 .titulo {
-  background-color: grey;
+  background-color:$color2;
 }
 
 .alineacion {
@@ -37,7 +42,7 @@ body {
 .productos {
   display: flex;
   flex-direction: row;
-  background-color: rgba(128, 128, 128, 0.623);
+  background-color: $color2;
   justify-content: space-between;
   padding: 20px;
   margin: 20px;
@@ -45,13 +50,12 @@ body {
 
 h2 {
   font-family: versity;
-  color: black;
+  color: $color1;
 }
 
 p {
-  font-family: varsity;
-  color: black;
-  font-size: 20px;
+@extend h2;
+
 }
 
 
@@ -68,7 +72,7 @@ img {
   grid-template-areas: "img3 img3 img3 img3" "img2 img2 img4 img4" "img5 img5 img1 img1";
   grid-gap: 15px;
   padding: 20px;
-  background-color: rgba(128, 128, 128, 0.623);
+  background-color: $color2;
 }
 
 .item {
@@ -113,6 +117,13 @@ img {
   background-image: url(../assets/multimedia/empresa\ 5.jpg);
 }
 
+.box:nth-child(1){
+  grid-column-start: span 2;
+}
+.box:nth-child(4){
+  grid-column-start: span 2;
+}
+
 .footer{
   margin-top: auto;
   width: 100vw;
@@ -128,13 +139,6 @@ img {
   padding: 15px 0;
 }
 
-// .footerAlineacion {
-//   margin-top: 40px;
-//   text-align: center;
-//   color: white;
-//   margin: 0;
-//   padding: 0;
-// }
 
 @media (max-width: 991px) {
   .alineacion {
